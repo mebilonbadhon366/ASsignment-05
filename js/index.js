@@ -6,11 +6,11 @@
 
     const donation = parseFloat(document.getElementById("donation").value);
 
-    // if(donation <= 0 || isNaN(donation)){
-    //     document.getElementById("donation-error").classList.remove('hidden');
-    //     return ;
+    if(donation <= 0 || isNaN(donation)){
         
-    //    };
+        return('donate') ;
+        
+       };
    const totalDonation = parseFloat(document.getElementById('total-donation').innerText);
  
   const newDonation= totalDonation + donation;
@@ -53,11 +53,10 @@ donateNowButton.addEventListener('click',function() {
    const donation = parseFloat(document.getElementById("Donation").value);
 
 
-   // if(donation <= 0 || isNaN(donation)){
-   //     document.getElementById("donation-error").classList.remove('hidden');
-   //     return ;
+   if(donation <= 0 || isNaN(donation)){
+       return ('donation');
        
-   //    };
+      };
 
    
    
@@ -110,15 +109,14 @@ donateNowButton.addEventListener('click',function() {
 
     const donation = parseFloat(document.getElementById("donation-given").value);
 
-    // if(donation <= 0 || isNaN(donation)){
-    //     document.getElementById("donation-error").classList.remove('hidden');
-    //     return ;
+    if(donation <= 0 || isNaN(donation)){
+        return ('donation-amount');
         
-    //    };
+       };
    const totalDonation = parseFloat(document.getElementById('total-donation-amount').innerText);
  
   const newDonation= totalDonation + donation;
-  const newDonationElement=document.getElementById('total-donation')
+  const newDonationElement=document.getElementById('total-donation-amount')
    newDonationElement.innerText=newDonation;
 
   const balance= parseFloat(document.getElementById('balance').innerHTML);
@@ -150,16 +148,6 @@ donateNowButton.addEventListener('click',function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 // history tap functionality
 
    const historyTab=document.getElementById("history-tab");
@@ -175,20 +163,6 @@ donateNowButton.addEventListener('click',function() {
 
   document.getElementById('donate-form').classList.add('hidden');
    // document.getElementById('history-list').classList.remove('hidden');
-
-    
-
-   // const historyItem=document.createElement("div");
-  // historyItem.className='bg-white p-3 rounded border1-2 border-indigo-500';
-
-   // historyItem.innerHTML =
-   // // {/* <p><span>{donation}</span> Taka is Donated for famine-2024 at Feni, Bangladesh</p> */}
-   //   <p>{new Date().toLocaleDateString()}</p>
-   // const historyContainer=document.getElementById("history-list");
-    // historyContainer.insertBefore(historyItem,historyContainer.firstChild);
-
-
-
 
 
     });
@@ -211,6 +185,22 @@ donateNowButton.addEventListener('click',function() {
 
 
    });
+
+
+// modal idea 
+
+       const modalTab=document.getElementById("modal");
+         Donate.addEventListener('click', function(){
+
+            document.getElementById("modal").classList.add('hidden');
+
+
+         });
+
+
+
+
+
 
    // live validation for input 
     // document.getElementById("donation").addEventListener("input",function(){
