@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <main></main>
+    <main>
         <!-- navbar section start -->
-         <navbar class="sticky top-0  ">
+         <navbar class="sticky top-0 backdrop-blur ">
       <div class="w-full h-20 bg-fuchsia-50  ">
         <div class="w-11/12 mx-auto  flex justify-between">
             <button class="btn bg-lime-400 w-16 mt-5 text-black font-bold px-2  rounded-xl hover:bg-lime-400">Blog</button>
@@ -44,9 +44,9 @@
       </div>
 </navbar>
  <!-- card section start here -->
-    <section id="donate-form">
+    <section id="donate-form" >
     <!-- Donate for flood at Noakhali -->
-     <div class="w-11/12 mx-auto mt-20 border-solid border-2 border-gray-400 rounded  ">
+     <div class="w-11/12 mx-auto mt-20 rounded  ">
         <div class=" flex p-6 border-dotted border-2 border-gray-100 rounded  ">
             <div class="card md:card-side  shadow-xl">
                 <figure>
@@ -67,7 +67,7 @@
                    <p id="donation-error" class="text-orange-700 textxl mt-2 hidden">invalid Amount!</p>
                   <div class="card-actions ">
                     <button id="donate"  class="btn bg-lime-400 w-full ">Donate Now</button>
-                  </div>
+                    
                   
                 </div>
               </div>
@@ -75,8 +75,8 @@
      </div>
      
      <!-- Donate for recent flood in feni  -->
-     <div class="w-11/12 mx-auto mt-20 border-solid border-2 border-gray-400 rounded  ">
-        <div class=" flex p-6 border-dotted border-2 border-gray-50 rounded  ">
+     <div class="w-11/12 mx-auto mt-20    rounded  ">
+        <div class=" flex p-6  border-solid border-2 border-gray-50 rounded  ">
             <div class="card md:card-side  shadow-xl">
                 <figure>
                   <img src="assets/feni.png" />
@@ -102,7 +102,7 @@
      </div>
 
      <!-- quota movement  -->
-     <div class="w-11/12 mx-auto mt-20 border-solid border-2 border-gray-400 rounded  ">
+     <div class="w-11/12 mx-auto mt-20  rounded  ">
         <div class=" flex p-6 border-dotted border-2 border-gray-50 rounded  ">
             <div class="card md:card-side  shadow-xl">
                 <figure>
@@ -138,33 +138,29 @@
    <!-- history section end here -->
 
 <!-- modal section start here  -->
-<div id="modal"  class="modal-box justify-center hidden">
+<!-- <button class="btn" onclick="my_modal_2.showModal()"></button> -->
+ 
+<dialog id="my_modal_1" class="modal">
+<div id="modal"  class="modal-box justify-center hidden ">
+  <span> class="close-button">&times;</span>
     <h3 class="text-3xl font-bold mb-2">Congrates!</h3>
     <img class="items-center"    src="assets/coin.png">
     <p class="py-4">You Have Donated For Humankind<span class="textxl font-bold"><br>Successfully</span></p>
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
-        <button class="btn flex justify-center ">Close Confirmation</button>
+        <button class="btn">Close Confirmation</button>
+      </form>
+      </div>
+      </div> 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+       
     </main>
-
+    
 
 
 

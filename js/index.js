@@ -189,21 +189,19 @@ donateNowButton.addEventListener('click',function() {
 
 // modal idea 
 
-       const modalTab=document.getElementById("modal");
-         Donate.addEventListener('click', function(){
+      //  const modalTab=document.getElementById("modal");
+      //    Donate.addEventListener('click', function(){
 
-            document.getElementById("modal").classList.add('hidden');
-
-
-         });
+      //       document.getElementById("modal").classList.remove('hidden');
 
 
+      //    });
+      
+
+      
 
 
 
 
-   // live validation for input 
-    // document.getElementById("donation").addEventListener("input",function(){
 
-    // const inputValue=parseFloat(document.getElementById("donatio").value)
-     // })
+   
